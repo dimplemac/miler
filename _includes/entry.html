@@ -6,6 +6,9 @@
 
 <article class="entry h-entry">
   <header class="entry-header">
+    {% if entry.img %}
+        <img src={{entry.img}}>
+    {% endif %}
     <h3 class="entry-title p-name">
       {% if entry.link %}
         <a class="u-bookmark-of" href="{{ entry.link }}">{{ title }}</a> <a href="{{ entry.url | relative_url }}" rel="bookmark"><span class="link-arrow">&rarr;</span></a>
